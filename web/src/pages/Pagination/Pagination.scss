@@ -1,0 +1,96 @@
+$accent_color: #ff6347; // Замените на правильное значение
+
+.pagination {
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+
+  $button-color: $accent_color;
+
+  &_disabled {
+    background-color: #efefef;
+    pointer-events: none;
+  }
+
+  &__label {
+    padding-right: 16px;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  &__navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  &__divider {
+    width: 1px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &__btn {
+    width: 37px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 100px;
+    height: 38px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D9D9D9;
+    border-top: none;
+    border-bottom: none;
+    background: #FAFAFA;
+    margin: 1px 0;
+
+    input {
+      width: 100%;
+      height: calc(100% - 2px);
+      border: none;
+      margin: 1px 0;
+      padding: 0;
+      outline: none;
+      text-align: center;
+      background: none;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &__page-indicator {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    flex: 1;
+    user-select: none;
+
+    span {
+      font-weight: normal;
+      opacity: 0.4;
+    }
+  }
+
+  &__page-size {
+    min-width: 150px;
+    padding-left: 16px;
+  }
+
+  &_disabled {
+    $button-color: #ccc;
+  }
+}

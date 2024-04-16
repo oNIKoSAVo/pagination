@@ -1,0 +1,23 @@
+/* Label.css */
+.label {
+  /* здесь могут быть ваши стандартные стили */
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 16px;
+  height: 22px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label-required::after {
+  content: '*';
+  color: red;
+}
+
+.required-text {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 4px;
+  display: inline;
+}
